@@ -14,3 +14,276 @@
   --light-gray: hsl(0, 0%, 81%);
   --light-grayish-blue: hsl(210, 46%, 95%);
 }
+
+body {
+  background: var(--light-grayish-blue);
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 13px;
+}
+
+main {
+  padding: 3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.one {
+  background-color: var(--moderate-violet);
+  background-image: url(./images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 90% top;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 1.5rem;
+}
+
+.userone {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.userone__img {
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  border: 2px solid hsl(263, 88%, 67%);
+}
+
+.infoone__p {
+  color: var(--white);
+}
+
+.infoone__p__s {
+  display: block;
+  color: var(--white);
+  opacity: 50%;
+  font-size: 0.7rem;
+}
+
+.one__h {
+  color: var(--white);
+  margin-top: 1rem;
+  width: 91.5%;
+}
+
+.one__p {
+  color: var(--white);
+  opacity: 70%;
+  margin-top: 1rem;
+  width: 89%;
+}
+
+.two {
+  background-color: var(--very-dark-grayish-blue);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 1.5rem;
+}
+
+.usertwo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.usertwo__img {
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+}
+
+.infotwo__p {
+  color: var(--white);
+}
+
+.infotwo__p__s {
+  display: block;
+  color: var(--white);
+  opacity: 50%;
+  font-size: 0.7rem;
+}
+
+.two__h {
+  color: var(--white);
+  margin-top: 1rem;
+  width: 91.5%;
+}
+
+.two__p {
+  color: var(--white);
+  opacity: 70%;
+  margin-top: 1rem;
+}
+
+.three {
+  background: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 1.5rem;
+}
+
+.userthree {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.userthree__img {
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+}
+
+.infothree__p {
+  color: var(--very-dark-grayish-blue);
+}
+
+.infothree__p__s {
+  display: block;
+  color: var(--very-dark-grayish-blue);
+  opacity: 50%;
+  font-size: 0.7rem;
+}
+
+.three__h {
+  color: var(--very-dark-grayish-blue);
+  margin-top: 1rem;
+  width: 91.5%;
+}
+
+.three__p {
+  color: var(--very-dark-grayish-blue);
+  opacity: 70%;
+  margin-top: 1rem;
+  width: 89%;
+}
+
+.four {
+  background: var(--very-dark-blackish-blue);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 1.5rem;
+}
+
+.userfour {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.userfour__img {
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--moderate-violet);
+}
+
+.infofour__p {
+  color: var(--white);
+}
+
+.infofour__p__s {
+  color: var(--white);
+  opacity: 50%;
+  display: block;
+  font-size: 0.7rem;
+}
+
+.four__h {
+  color: var(--white);
+  margin-top: 1rem;
+  width: 91.5%;
+}
+
+.four__p {
+  color: var(--white);
+  opacity: 70%;
+  margin-top: 1rem;
+  width: 94%;
+}
+
+.five {
+  background: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 1.5rem;
+}
+
+.userfive {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.userfive__img {
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+}
+
+.infofive__p {
+  color: var(--very-dark-grayish-blue);
+}
+
+.infofive__p__s {
+  color: var(--very-dark-grayish-blue);
+  opacity: 50%;
+  font-size: 0.7rem;
+  display: block;
+}
+
+.five__h {
+  color: var(--very-dark-grayish-blue);
+  margin-top: 1rem;
+
+}
+
+.five__p {
+  color: var(--very-dark-grayish-blue);
+  opacity: 70%;
+  margin-top: 1rem;
+  width: 93.8%;
+}
+
+@media only screen and (min-width: 53rem) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  main {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    max-width: 76.5rem;
+  }
+
+  #one {
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+
+  #two {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  #three {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  #four {
+    grid-column: 2 / 4;
+    grid-row: 2;
+  }
+
+  #five {
+    grid-column: 4;
+    grid-row: 1 / 3
+  }
+}
